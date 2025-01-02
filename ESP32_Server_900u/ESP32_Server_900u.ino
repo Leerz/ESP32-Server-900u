@@ -47,11 +47,11 @@
                      // with this enabled you do not upload goldhen to the board, set this to false if you wish to upload goldhen.
 
                        // enable autohen [ true / false ]
-#define AUTOHEN false  // this will load goldhen instead of the normal index/payload selection page, use this if you only want hen and no other payloads. 
+#define AUTOHEN true  // this will load goldhen instead of the normal index/payload selection page, use this if you only want hen and no other payloads. 
                        // you can update goldhen by uploading the goldhen payload to the board storage with the filename "goldhen.bin".
 
                      // enable fan threshold [ true / false ]
-#define FANMOD true  // this will include a function to set the consoles fan ramp up temperature in °C 
+#define FANMOD false  // this will include a function to set the consoles fan ramp up temperature in °C 
                      // this will not work if the board is a esp32 and the usb control is disabled.
 
 
@@ -64,15 +64,15 @@
 
 //create access point
 boolean startAP = true;
-String AP_SSID = "PS4_WEB_AP";
-String AP_PASS = "password";
+String AP_SSID = "PREMAZINGPH900";
+String AP_PASS = "11112222";
 IPAddress Server_IP(10, 1, 1, 1);
 IPAddress Subnet_Mask(255, 255, 255, 0);
 
 //connect to wifi
 boolean connectWifi = false;
-String WIFI_SSID = "Home_WIFI";
-String WIFI_PASS = "password";
+String WIFI_SSID = "PREMAZINGPH900_";
+String WIFI_PASS = "11112222";
 String WIFI_HOSTNAME = "ps4.local";
 
 //server port
